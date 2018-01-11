@@ -1,0 +1,368 @@
+10:12:19,395  INFO TypeExtractor:1812 - class java.util.ArrayList is not a valid POJO type
+10:12:19,521  INFO TypeExtractor:1789 - Class example.VC.RandomWalkSimRankRedisBatch$Message is not public, cannot treat it as a POJO type. Will be handled as GenericType
+10:12:19,592  INFO ExecutionEnvironment:1108 - The job has 1 registered types and 0 default Kryo serializers
+10:12:20,007  INFO FlinkMiniCluster:79 - Disabled queryable state server
+10:12:20,100  INFO FlinkMiniCluster:313 - Starting FlinkMiniCluster.
+10:12:20,680  INFO Slf4jLogger:80 - Slf4jLogger started
+10:12:20,711  INFO BlobServer:109 - Created BLOB server storage directory /var/folders/_k/h5pcklts6mz13vdz_kwnncpr0000gn/T/blobStore-f6d80ba8-97d2-4720-9c1f-f127dc6b36a0
+10:12:20,731  INFO BlobServer:187 - Started BLOB server at 0.0.0.0:62777 - max concurrent requests: 50 - max backlog: 1000
+10:12:20,754  INFO MetricRegistry:83 - No metrics reporter configured, no metrics will be exposed/reported.
+10:12:20,766  INFO MemoryArchivist:128 - Started memory archivist akka://flink/user/archive_1
+10:12:20,770  INFO JobManager:128 - Starting JobManager at akka://flink/user/jobmanager_1.
+10:12:20,790  INFO StandaloneResourceManager:431 - Trying to associate with JobManager leader akka://flink/user/jobmanager_1
+10:12:20,798  INFO TaskManager:128 - Messages between TaskManager and JobManager have a max timeout of 10000 milliseconds
+10:12:20,805  INFO TaskManager:128 - Temporary file directory '/var/folders/_k/h5pcklts6mz13vdz_kwnncpr0000gn/T': total 465 GB, usable 353 GB (75.91% usable)
+10:12:20,836  INFO JobManager:128 - JobManager akka://flink/user/jobmanager_1 was granted leadership with leader session ID None.
+10:12:20,843  INFO NetworkBufferPool:121 - Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+10:12:20,851  INFO StandaloneResourceManager:489 - Resource Manager associating with leading JobManager Actor[akka://flink/user/jobmanager_1#-1552720064] - leader session null
+10:12:20,862  INFO NetworkEnvironment:268 - Starting the network environment and its components.
+10:12:20,865  INFO TaskManager:128 - Limiting managed memory to 1227 MB, memory will be allocated lazily.
+10:12:20,873  INFO IOManager:95 - I/O manager uses directory /var/folders/_k/h5pcklts6mz13vdz_kwnncpr0000gn/T/flink-io-a4002e11-2c30-4441-87fa-9836fa9bf488 for spill files.
+10:12:20,879  INFO MetricRegistry:83 - No metrics reporter configured, no metrics will be exposed/reported.
+10:12:20,889  INFO FileCache:87 - User file cache uses directory /var/folders/_k/h5pcklts6mz13vdz_kwnncpr0000gn/T/flink-dist-cache-f44f0bab-a599-4bf8-9ce8-75a66ac0e93e
+10:12:20,900  INFO TaskManager:128 - Starting TaskManager actor at akka://flink/user/taskmanager_1#126451542.
+10:12:20,900  INFO TaskManager:128 - TaskManager data connection information: ResourceID{resourceId='b502ce21741c3be261762eba5a7c37e7'} @ localhost (dataPort=-1)
+10:12:20,901  INFO TaskManager:128 - TaskManager has 1 task slot(s).
+10:12:20,903  INFO TaskManager:128 - Memory usage stats: [HEAP: 86/245/3641 MB, NON HEAP: 24/25/-1 MB (used/committed/max)]
+10:12:20,910  INFO TaskManager:128 - Trying to register at JobManager akka://flink/user/jobmanager_1 (attempt 1, timeout: 500 milliseconds)
+10:12:20,912  INFO StandaloneResourceManager:368 - TaskManager ResourceID{resourceId='b502ce21741c3be261762eba5a7c37e7'} has started.
+10:12:20,916  INFO InstanceManager:176 - Registered TaskManager at localhost (akka://flink/user/taskmanager_1) as 51a63d797f2d6f9c9cdfa9da1be6a54b. Current number of registered hosts is 1. Current number of alive task slots is 1.
+10:12:20,919  INFO TaskManager:128 - Successful registration at JobManager (akka://flink/user/jobmanager_1), starting network stack and library cache.
+10:12:20,922  INFO TaskManager:128 - Determined BLOB server address to be localhost/127.0.0.1:62777. Starting BLOB cache.
+10:12:20,923  INFO BlobCache:76 - Created BLOB cache storage directory /var/folders/_k/h5pcklts6mz13vdz_kwnncpr0000gn/T/blobStore-08cb26e4-47e3-42d6-a401-dcea7d87e70f
+10:12:21,363  INFO JobSubmissionClientActor:223 - Received SubmitJobAndWait(JobGraph(jobId: 955087a3985be319340f5ba87857b8dd)) but there is no connection to a JobManager yet.
+10:12:21,364  INFO JobSubmissionClientActor:91 - Received job RandomWalkSimRank (955087a3985be319340f5ba87857b8dd).
+10:12:21,364  INFO JobSubmissionClientActor:302 - Disconnect from JobManager null.
+10:12:21,370  INFO JobSubmissionClientActor:310 - Connect to JobManager Actor[akka://flink/user/jobmanager_1#-1552720064].
+10:12:21,371  INFO JobSubmissionClientActor:315 - Connected to new JobManager akka://flink/user/jobmanager_1.
+10:12:21,371  INFO JobSubmissionClientActor:258 - Connected to JobManager at Actor[akka://flink/user/jobmanager_1#-1552720064]
+10:12:21,371  INFO JobSubmissionClientActor:137 - Sending message to JobManager akka://flink/user/jobmanager_1 to submit job RandomWalkSimRank (955087a3985be319340f5ba87857b8dd) and wait for progress
+10:12:21,372  INFO JobSubmissionClientActor:145 - Upload jar files to job manager akka://flink/user/jobmanager_1.
+10:12:21,374  INFO JobSubmissionClientActor:163 - Submit job to the job manager akka://flink/user/jobmanager_1.
+10:12:21,378  INFO JobManager:128 - Submitting job 955087a3985be319340f5ba87857b8dd (RandomWalkSimRank).
+10:12:21,443  INFO JobManager:128 - Using restart strategy NoRestartStrategy for 955087a3985be319340f5ba87857b8dd.
+10:12:21,488  INFO JobManager:119 - Running initialization on master for job RandomWalkSimRank (955087a3985be319340f5ba87857b8dd).
+10:12:21,741  WARN NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+10:12:22,301  INFO JobManager:141 - Successfully ran initialization on master in 813 ms.
+10:12:22,320  INFO JobSubmissionClientActor:111 - Job 955087a3985be319340f5ba87857b8dd was successfully submitted to the JobManager akka://flink/deadLetters.
+10:12:22,320  INFO JobManager:128 - Scheduling job 955087a3985be319340f5ba87857b8dd (RandomWalkSimRank).
+10:12:22,320  INFO ExecutionGraph:965 - Job RandomWalkSimRank (955087a3985be319340f5ba87857b8dd) switched from state CREATED to RUNNING.
+10:12:22,321  INFO ExecutionGraph:1025 - DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565) switched from CREATED to SCHEDULED.
+10:12:22,322  INFO JobSubmissionClientActor:275 - 01/11/2018 10:12:22	Job execution switched to status RUNNING.
+10:12:22,322  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat))(1/1) switched to SCHEDULED 
+10:12:22,333  INFO ExecutionGraph:1025 - DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565) switched from SCHEDULED to DEPLOYING.
+10:12:22,334  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat))(1/1) switched to DEPLOYING 
+10:12:22,334  INFO ExecutionGraph:354 - Deploying DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (attempt #0) to localhost
+10:12:22,342  INFO ExecutionGraph:1025 - DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b) switched from CREATED to SCHEDULED.
+10:12:22,342  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat))(1/1) switched to SCHEDULED 
+10:12:22,342  INFO ExecutionGraph:1025 - DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b) switched from SCHEDULED to DEPLOYING.
+10:12:22,343  INFO ExecutionGraph:354 - Deploying DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (attempt #0) to localhost
+10:12:22,343  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat))(1/1) switched to DEPLOYING 
+10:12:22,371  INFO TaskManager:128 - Received task DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1)
+10:12:22,371  INFO Task:873 - DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565) switched from CREATED to DEPLOYING.
+10:12:22,374  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@3c6aea5e for DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1)
+10:12:22,374  INFO TaskManager:128 - Received task DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1)
+10:12:22,374  INFO Task:546 - Loading JAR files for task DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565) [DEPLOYING].
+10:12:22,374  INFO Task:873 - DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b) switched from CREATED to DEPLOYING.
+10:12:22,375  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@3b305e66 for DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1)
+10:12:22,375  INFO Task:546 - Loading JAR files for task DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b) [DEPLOYING].
+10:12:22,377  INFO Task:575 - Registering task at network: DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b) [DEPLOYING].
+10:12:22,377  INFO Task:575 - Registering task at network: DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565) [DEPLOYING].
+10:12:22,380  INFO Task:873 - DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565) switched from DEPLOYING to RUNNING.
+10:12:22,380  INFO Task:873 - DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b) switched from DEPLOYING to RUNNING.
+10:12:22,384  INFO ExecutionGraph:1025 - DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b) switched from DEPLOYING to RUNNING.
+10:12:22,385  INFO ExecutionGraph:1025 - DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565) switched from DEPLOYING to RUNNING.
+10:12:22,385  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat))(1/1) switched to RUNNING 
+10:12:22,385  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat))(1/1) switched to RUNNING 
+10:12:22,406  INFO Task:873 - DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565) switched from RUNNING to FINISHED.
+10:12:22,406  INFO Task:744 - Freeing task resources for DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565).
+10:12:22,406  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1)
+10:12:22,408  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (70e7fae97271b6a1655a0d3101491565)
+10:12:22,412  INFO Task:873 - DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b) switched from RUNNING to FINISHED.
+10:12:22,412  INFO Task:744 - Freeing task resources for DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b).
+10:12:22,412  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1)
+10:12:22,413  INFO ExecutionGraph:1025 - Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6) switched from CREATED to SCHEDULED.
+10:12:22,413  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	Map (Map at mapVertices(Graph.java:521))(1/1) switched to SCHEDULED 
+10:12:22,413  INFO ExecutionGraph:1025 - Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6) switched from SCHEDULED to DEPLOYING.
+10:12:22,414  INFO ExecutionGraph:354 - Deploying Map (Map at mapVertices(Graph.java:521)) (1/1) (attempt #0) to localhost
+10:12:22,414  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	Map (Map at mapVertices(Graph.java:521))(1/1) switched to DEPLOYING 
+10:12:22,415  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (dd427fa9df0205d5fbcabf0d56b6231b)
+10:12:22,418  INFO ExecutionGraph:1025 - DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (dd427fa9df0205d5fbcabf0d56b6231b) switched from RUNNING to FINISHED.
+10:12:22,418  INFO ExecutionGraph:1025 - DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat)) (1/1) (70e7fae97271b6a1655a0d3101491565) switched from RUNNING to FINISHED.
+10:12:22,418  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	DataSource (at getDefaultVertexDataset(RandomWalkSimRankData.java:35) (org.apache.flink.api.java.io.CollectionInputFormat))(1/1) switched to FINISHED 
+10:12:22,419  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	DataSource (at getDefaultEdgeDataset(RandomWalkSimRankData.java:56) (org.apache.flink.api.java.io.CollectionInputFormat))(1/1) switched to FINISHED 
+10:12:22,419  INFO ExecutionGraph:1025 - CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138) switched from CREATED to SCHEDULED.
+10:12:22,419  INFO ExecutionGraph:1025 - CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1) switched from CREATED to SCHEDULED.
+10:12:22,420  INFO ExecutionGraph:1025 - CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138) switched from SCHEDULED to DEPLOYING.
+10:12:22,420  INFO ExecutionGraph:1025 - CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1) switched from SCHEDULED to DEPLOYING.
+10:12:22,420  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	CoGroup (Compute Function)(1/1) switched to SCHEDULED 
+10:12:22,420  INFO ExecutionGraph:354 - Deploying CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (attempt #0) to localhost
+10:12:22,420  INFO ExecutionGraph:354 - Deploying CoGroup (Compute Function) (1/1) (attempt #0) to localhost
+10:12:22,420  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	CoGroup (CoGroup at outDegrees(Graph.java:871))(1/1) switched to SCHEDULED 
+10:12:22,421  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	CoGroup (Compute Function)(1/1) switched to DEPLOYING 
+10:12:22,421  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	CoGroup (CoGroup at outDegrees(Graph.java:871))(1/1) switched to DEPLOYING 
+10:12:22,426  INFO TaskManager:128 - Received task Map (Map at mapVertices(Graph.java:521)) (1/1)
+10:12:22,427  INFO Task:873 - Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6) switched from CREATED to DEPLOYING.
+10:12:22,427  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@38152bcf for Map (Map at mapVertices(Graph.java:521)) (1/1)
+10:12:22,427  INFO Task:546 - Loading JAR files for task Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6) [DEPLOYING].
+10:12:22,428  INFO Task:575 - Registering task at network: Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6) [DEPLOYING].
+10:12:22,429  INFO Task:873 - Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6) switched from DEPLOYING to RUNNING.
+10:12:22,429  INFO TaskManager:128 - Received task CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1)
+10:12:22,429  INFO Task:873 - CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1) switched from CREATED to DEPLOYING.
+10:12:22,430  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@57e90575 for CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1)
+10:12:22,430  INFO Task:546 - Loading JAR files for task CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1) [DEPLOYING].
+10:12:22,431  INFO Task:575 - Registering task at network: CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1) [DEPLOYING].
+10:12:22,431  INFO Task:873 - CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1) switched from DEPLOYING to RUNNING.
+10:12:22,432  INFO TaskManager:128 - Received task CoGroup (Compute Function) (1/1)
+10:12:22,432  INFO Task:873 - CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138) switched from CREATED to DEPLOYING.
+10:12:22,433  INFO ExecutionGraph:1025 - Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6) switched from DEPLOYING to RUNNING.
+10:12:22,433  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@52623328 for CoGroup (Compute Function) (1/1)
+10:12:22,433  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	Map (Map at mapVertices(Graph.java:521))(1/1) switched to RUNNING 
+10:12:22,433  INFO ExecutionGraph:1025 - CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1) switched from DEPLOYING to RUNNING.
+10:12:22,433  INFO Task:546 - Loading JAR files for task CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138) [DEPLOYING].
+10:12:22,434  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	CoGroup (CoGroup at outDegrees(Graph.java:871))(1/1) switched to RUNNING 
+10:12:22,436  INFO Task:575 - Registering task at network: CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138) [DEPLOYING].
+10:12:22,437  INFO Task:873 - CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138) switched from DEPLOYING to RUNNING.
+10:12:22,438  INFO ExecutionGraph:1025 - CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138) switched from DEPLOYING to RUNNING.
+10:12:22,438  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:22	CoGroup (Compute Function)(1/1) switched to RUNNING 
+10:12:23,095  INFO Task:873 - Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6) switched from RUNNING to FINISHED.
+10:12:23,096  INFO Task:744 - Freeing task resources for Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6).
+10:12:23,096  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for Map (Map at mapVertices(Graph.java:521)) (1/1)
+10:12:23,096  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task Map (Map at mapVertices(Graph.java:521)) (2b9de3211213b60b717ad3fc69ce1cf6)
+10:12:23,097  INFO ExecutionGraph:1025 - Map (Map at mapVertices(Graph.java:521)) (1/1) (2b9de3211213b60b717ad3fc69ce1cf6) switched from RUNNING to FINISHED.
+10:12:23,098  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Map (Map at mapVertices(Graph.java:521))(1/1) switched to FINISHED 
+10:12:23,098  INFO ExecutionGraph:1025 - CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7) switched from CREATED to SCHEDULED.
+10:12:23,098  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	CoGroup (CoGroup at joinWithVertices(Graph.java:630))(1/1) switched to SCHEDULED 
+10:12:23,098  INFO ExecutionGraph:1025 - CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7) switched from SCHEDULED to DEPLOYING.
+10:12:23,099  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	CoGroup (CoGroup at joinWithVertices(Graph.java:630))(1/1) switched to DEPLOYING 
+10:12:23,099  INFO ExecutionGraph:354 - Deploying CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (attempt #0) to localhost
+10:12:23,101  INFO TaskManager:128 - Received task CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1)
+10:12:23,102  INFO Task:873 - CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7) switched from CREATED to DEPLOYING.
+10:12:23,102  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@20af423 for CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1)
+10:12:23,103  INFO Task:546 - Loading JAR files for task CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7) [DEPLOYING].
+10:12:23,104  INFO Task:575 - Registering task at network: CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7) [DEPLOYING].
+10:12:23,104  INFO Task:873 - CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7) switched from DEPLOYING to RUNNING.
+10:12:23,104  INFO Task:873 - CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1) switched from RUNNING to FINISHED.
+10:12:23,104  INFO Task:744 - Freeing task resources for CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1).
+10:12:23,105  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1)
+10:12:23,106  INFO ExecutionGraph:1025 - CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7) switched from DEPLOYING to RUNNING.
+10:12:23,106  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task CoGroup (CoGroup at outDegrees(Graph.java:871)) (2385e394d2ec07b4cf29ebe39594a6a1)
+10:12:23,106  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	CoGroup (CoGroup at joinWithVertices(Graph.java:630))(1/1) switched to RUNNING 
+10:12:23,107  INFO ExecutionGraph:1025 - CoGroup (CoGroup at outDegrees(Graph.java:871)) (1/1) (2385e394d2ec07b4cf29ebe39594a6a1) switched from RUNNING to FINISHED.
+10:12:23,107  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	CoGroup (CoGroup at outDegrees(Graph.java:871))(1/1) switched to FINISHED 
+10:12:23,254  INFO Task:873 - CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7) switched from RUNNING to FINISHED.
+10:12:23,254  INFO Task:744 - Freeing task resources for CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7).
+10:12:23,255  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1)
+10:12:23,256  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (83e0d10643ab4e45f587328b114901b7)
+10:12:23,258  INFO ExecutionGraph:1025 - CoGroup (CoGroup at joinWithVertices(Graph.java:630)) (1/1) (83e0d10643ab4e45f587328b114901b7) switched from RUNNING to FINISHED.
+10:12:23,259  INFO ExecutionGraph:1025 - Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80) switched from CREATED to SCHEDULED.
+10:12:23,259  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	CoGroup (CoGroup at joinWithVertices(Graph.java:630))(1/1) switched to FINISHED 
+10:12:23,259  INFO ExecutionGraph:1025 - IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b) switched from CREATED to SCHEDULED.
+10:12:23,259  INFO ExecutionGraph:1025 - Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80) switched from SCHEDULED to DEPLOYING.
+10:12:23,260  INFO ExecutionGraph:1025 - IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b) switched from SCHEDULED to DEPLOYING.
+10:12:23,260  INFO ExecutionGraph:354 - Deploying Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (attempt #0) to localhost
+10:12:23,259  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Map (Map at createResult(VertexCentricIteration.java:170))(1/1) switched to SCHEDULED 
+10:12:23,260  INFO ExecutionGraph:354 - Deploying IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (attempt #0) to localhost
+10:12:23,260  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a))(1/1) switched to SCHEDULED 
+10:12:23,261  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Map (Map at createResult(VertexCentricIteration.java:170))(1/1) switched to DEPLOYING 
+10:12:23,261  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a))(1/1) switched to DEPLOYING 
+10:12:23,262  INFO TaskManager:128 - Received task Map (Map at createResult(VertexCentricIteration.java:170)) (1/1)
+10:12:23,262  INFO Task:873 - Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80) switched from CREATED to DEPLOYING.
+10:12:23,263  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@1976154 for Map (Map at createResult(VertexCentricIteration.java:170)) (1/1)
+10:12:23,263  INFO Task:546 - Loading JAR files for task Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80) [DEPLOYING].
+10:12:23,264  INFO TaskManager:128 - Received task IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,264  INFO Task:575 - Registering task at network: Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80) [DEPLOYING].
+10:12:23,264  INFO Task:873 - Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80) switched from DEPLOYING to RUNNING.
+10:12:23,265  INFO Task:873 - IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b) switched from CREATED to DEPLOYING.
+10:12:23,265  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@7f40bb43 for IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,266  INFO ExecutionGraph:1025 - Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80) switched from DEPLOYING to RUNNING.
+10:12:23,266  INFO Task:546 - Loading JAR files for task IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b) [DEPLOYING].
+10:12:23,266  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Map (Map at createResult(VertexCentricIteration.java:170))(1/1) switched to RUNNING 
+10:12:23,272  INFO Task:873 - Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80) switched from RUNNING to FINISHED.
+10:12:23,272  INFO Task:744 - Freeing task resources for Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80).
+10:12:23,273  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for Map (Map at createResult(VertexCentricIteration.java:170)) (1/1)
+10:12:23,273  INFO Task:575 - Registering task at network: IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b) [DEPLOYING].
+10:12:23,273  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task Map (Map at createResult(VertexCentricIteration.java:170)) (4478aa01fd4a5179082414e22b60bb80)
+10:12:23,273  INFO Task:873 - IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b) switched from DEPLOYING to RUNNING.
+10:12:23,277  INFO ExecutionGraph:1025 - IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b) switched from DEPLOYING to RUNNING.
+10:12:23,277  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a))(1/1) switched to RUNNING 
+10:12:23,277  INFO ExecutionGraph:1025 - Map (Map at createResult(VertexCentricIteration.java:170)) (1/1) (4478aa01fd4a5179082414e22b60bb80) switched from RUNNING to FINISHED.
+10:12:23,278  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Map (Map at createResult(VertexCentricIteration.java:170))(1/1) switched to FINISHED 
+10:12:23,283  INFO IterationIntermediateTask:89 - starting iteration [1]:  CoGroup (Compute Function) (1/1)
+10:12:23,514  INFO IterationHeadTask:303 - starting iteration [1]:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,515  INFO ExecutionGraph:1025 - Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427) switched from CREATED to SCHEDULED.
+10:12:23,516  INFO ExecutionGraph:1025 - Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427) switched from SCHEDULED to DEPLOYING.
+10:12:23,516  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Join(Join at createResult(VertexCentricIteration.java:181))(1/1) switched to SCHEDULED 
+10:12:23,516  INFO ExecutionGraph:354 - Deploying Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (attempt #0) to localhost
+10:12:23,516  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Join(Join at createResult(VertexCentricIteration.java:181))(1/1) switched to DEPLOYING 
+10:12:23,518  INFO TaskManager:128 - Received task Join(Join at createResult(VertexCentricIteration.java:181)) (1/1)
+10:12:23,518  INFO Task:873 - Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427) switched from CREATED to DEPLOYING.
+10:12:23,519  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@40614672 for Join(Join at createResult(VertexCentricIteration.java:181)) (1/1)
+10:12:23,519  INFO Task:546 - Loading JAR files for task Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427) [DEPLOYING].
+10:12:23,519  INFO Task:575 - Registering task at network: Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427) [DEPLOYING].
+10:12:23,520  INFO Task:873 - Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427) switched from DEPLOYING to RUNNING.
+10:12:23,520  INFO ExecutionGraph:1025 - Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427) switched from DEPLOYING to RUNNING.
+10:12:23,521  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Join(Join at createResult(VertexCentricIteration.java:181))(1/1) switched to RUNNING 
+10:12:23,592  INFO IterationIntermediateTask:89 - starting iteration [1]:  Join(Join at createResult(VertexCentricIteration.java:181)) (1/1)
+10:12:23,598  INFO IterationIntermediateTask:103 - finishing iteration [1]:  Join(Join at createResult(VertexCentricIteration.java:181)) (1/1)
+10:12:23,617  INFO IterationIntermediateTask:103 - finishing iteration [1]:  CoGroup (Compute Function) (1/1)
+10:12:23,617  INFO ExecutionGraph:1025 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c) switched from CREATED to SCHEDULED.
+10:12:23,617  INFO ExecutionGraph:1025 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e) switched from CREATED to SCHEDULED.
+10:12:23,617  INFO ExecutionGraph:1025 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c) switched from SCHEDULED to DEPLOYING.
+10:12:23,617  INFO ExecutionGraph:1025 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e) switched from SCHEDULED to DEPLOYING.
+10:12:23,617  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	FlatMap (FlatMap at createResult(VertexCentricIteration.java:194))(1/1) switched to SCHEDULED 
+10:12:23,618  INFO ExecutionGraph:354 - Deploying FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (attempt #0) to localhost
+10:12:23,617  INFO ExecutionGraph:354 - Deploying FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (attempt #0) to localhost
+10:12:23,618  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	FlatMap (FlatMap at createResult(VertexCentricIteration.java:198))(1/1) switched to SCHEDULED 
+10:12:23,618  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	FlatMap (FlatMap at createResult(VertexCentricIteration.java:194))(1/1) switched to DEPLOYING 
+10:12:23,618  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	FlatMap (FlatMap at createResult(VertexCentricIteration.java:198))(1/1) switched to DEPLOYING 
+10:12:23,619  INFO TaskManager:128 - Received task FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1)
+10:12:23,619  INFO Task:873 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e) switched from CREATED to DEPLOYING.
+10:12:23,619  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@39d66657 for FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1)
+10:12:23,619  INFO Task:546 - Loading JAR files for task FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e) [DEPLOYING].
+10:12:23,620  INFO TaskManager:128 - Received task FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1)
+10:12:23,620  INFO Task:873 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c) switched from CREATED to DEPLOYING.
+10:12:23,620  INFO Task:575 - Registering task at network: FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e) [DEPLOYING].
+10:12:23,620  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@23bda28d for FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1)
+10:12:23,620  INFO Task:873 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e) switched from DEPLOYING to RUNNING.
+10:12:23,620  INFO Task:546 - Loading JAR files for task FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c) [DEPLOYING].
+10:12:23,621  INFO ExecutionGraph:1025 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e) switched from DEPLOYING to RUNNING.
+10:12:23,621  INFO Task:575 - Registering task at network: FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c) [DEPLOYING].
+10:12:23,621  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	FlatMap (FlatMap at createResult(VertexCentricIteration.java:198))(1/1) switched to RUNNING 
+10:12:23,622  INFO Task:873 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c) switched from DEPLOYING to RUNNING.
+10:12:23,622  INFO ExecutionGraph:1025 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c) switched from DEPLOYING to RUNNING.
+10:12:23,623  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	FlatMap (FlatMap at createResult(VertexCentricIteration.java:194))(1/1) switched to RUNNING 
+10:12:23,623  INFO IterationTailTask:104 - starting iteration [1]:  FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1)
+10:12:23,623  INFO IterationIntermediateTask:89 - starting iteration [1]:  FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1)
+10:12:23,630  INFO IterationIntermediateTask:103 - finishing iteration [1]:  FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1)
+10:12:23,631  INFO ExecutionGraph:1025 - SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29) switched from CREATED to SCHEDULED.
+10:12:23,631  INFO ExecutionGraph:1025 - SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29) switched from SCHEDULED to DEPLOYING.
+10:12:23,631  INFO ExecutionGraph:354 - Deploying SolutionSet Delta (1/1) (attempt #0) to localhost
+10:12:23,631  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	SolutionSet Delta(1/1) switched to SCHEDULED 
+10:12:23,632  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	SolutionSet Delta(1/1) switched to DEPLOYING 
+10:12:23,632  INFO IterationTailTask:120 - finishing iteration [1]:  FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1)
+10:12:23,632  INFO TaskManager:128 - Received task SolutionSet Delta (1/1)
+10:12:23,633  INFO Task:873 - SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29) switched from CREATED to DEPLOYING.
+10:12:23,633  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@562465d4 for SolutionSet Delta (1/1)
+10:12:23,633  INFO Task:546 - Loading JAR files for task SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29) [DEPLOYING].
+10:12:23,633  INFO Task:575 - Registering task at network: SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29) [DEPLOYING].
+10:12:23,634  INFO Task:873 - SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29) switched from DEPLOYING to RUNNING.
+10:12:23,634  INFO ExecutionGraph:1025 - SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29) switched from DEPLOYING to RUNNING.
+10:12:23,635  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	SolutionSet Delta(1/1) switched to RUNNING 
+10:12:23,654  INFO IterationTailTask:104 - starting iteration [1]:  SolutionSet Delta (1/1)
+10:12:23,655  INFO IterationTailTask:120 - finishing iteration [1]:  SolutionSet Delta (1/1)
+10:12:23,656  INFO IterationHeadTask:328 - finishing iteration [1]:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,657  INFO IterationHeadTask:435 - sending WorkerDoneEvent to sync:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,657  INFO IterationHeadTask:334 - waiting for other workers in iteration [1]:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,657  INFO ExecutionGraph:1025 - Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f) switched from CREATED to SCHEDULED.
+10:12:23,658  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a))(1/1) switched to SCHEDULED 
+10:12:23,658  INFO ExecutionGraph:1025 - Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f) switched from SCHEDULED to DEPLOYING.
+10:12:23,658  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a))(1/1) switched to DEPLOYING 
+10:12:23,658  INFO ExecutionGraph:354 - Deploying Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (attempt #0) to localhost
+10:12:23,660  INFO TaskManager:128 - Received task Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,660  INFO Task:873 - Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f) switched from CREATED to DEPLOYING.
+10:12:23,661  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@4e111e1b for Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,661  INFO Task:546 - Loading JAR files for task Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f) [DEPLOYING].
+10:12:23,663  INFO Task:575 - Registering task at network: Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f) [DEPLOYING].
+10:12:23,663  INFO Task:873 - Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f) switched from DEPLOYING to RUNNING.
+10:12:23,664  INFO ExecutionGraph:1025 - Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f) switched from DEPLOYING to RUNNING.
+10:12:23,665  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a))(1/1) switched to RUNNING 
+10:12:23,666  INFO IterationSynchronizationSinkTask:117 - starting iteration [1]:  Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,668  INFO IterationSynchronizationSinkTask:124 - finishing iteration [1]:  Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,668  INFO WorksetEmptyConvergenceCriterion:44 - [13] elements updated in the solutionset in iteration [1]
+10:12:23,668  INFO IterationSynchronizationSinkTask:137 - signaling that all workers are done in iteration [1]:  Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,669  INFO IterationSynchronizationSinkTask:117 - starting iteration [2]:  Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,669  INFO IterationHeadTask:303 - starting iteration [2]:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,669  INFO IterationIntermediateTask:89 - starting iteration [2]:  Join(Join at createResult(VertexCentricIteration.java:181)) (1/1)
+10:12:23,669  INFO IterationIntermediateTask:89 - starting iteration [2]:  CoGroup (Compute Function) (1/1)
+10:12:23,669  INFO IterationIntermediateTask:89 - starting iteration [2]:  FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1)
+10:12:23,669  INFO IterationTailTask:104 - starting iteration [2]:  SolutionSet Delta (1/1)
+10:12:23,669  INFO IterationTailTask:104 - starting iteration [2]:  FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1)
+10:12:23,768  INFO IterationIntermediateTask:103 - finishing iteration [2]:  Join(Join at createResult(VertexCentricIteration.java:181)) (1/1)
+10:12:23,805  INFO IterationIntermediateTask:103 - finishing iteration [2]:  CoGroup (Compute Function) (1/1)
+10:12:23,807  INFO IterationIntermediateTask:103 - finishing iteration [2]:  FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1)
+10:12:23,807  INFO IterationTailTask:120 - finishing iteration [2]:  FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1)
+10:12:23,808  INFO IterationTailTask:120 - finishing iteration [2]:  SolutionSet Delta (1/1)
+10:12:23,808  INFO IterationHeadTask:328 - finishing iteration [2]:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,808  INFO IterationHeadTask:435 - sending WorkerDoneEvent to sync:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,808  INFO IterationSynchronizationSinkTask:124 - finishing iteration [2]:  Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,808  INFO IterationHeadTask:334 - waiting for other workers in iteration [2]:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,808  INFO IterationSynchronizationSinkTask:156 - maximum number of iterations [2] reached, terminating...:  Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,809  INFO IterationSynchronizationSinkTask:129 - signaling that all workers are to terminate in iteration [2]:  Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,809  INFO Task:873 - Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f) switched from RUNNING to FINISHED.
+10:12:23,809  INFO Task:744 - Freeing task resources for Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f).
+10:12:23,809  INFO IterationHeadTask:341 - head received termination request in iteration [2]:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,809  INFO IterationHeadTask:359 - streaming out final result after [2] iterations:  IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,809  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,809  INFO Task:873 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c) switched from RUNNING to FINISHED.
+10:12:23,809  INFO Task:873 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e) switched from RUNNING to FINISHED.
+10:12:23,810  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (724194b177257f94cad87c7c162fab5f)
+10:12:23,810  INFO Task:744 - Freeing task resources for FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c).
+10:12:23,810  INFO Task:744 - Freeing task resources for FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e).
+10:12:23,811  INFO Task:873 - SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29) switched from RUNNING to FINISHED.
+10:12:23,811  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1)
+10:12:23,811  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1)
+10:12:23,811  INFO Task:744 - Freeing task resources for SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29).
+10:12:23,812  INFO ExecutionGraph:1025 - Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (724194b177257f94cad87c7c162fab5f) switched from RUNNING to FINISHED.
+10:12:23,812  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (a05305624e1f3e1ca03141656ce31f4c)
+10:12:23,813  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Sync (Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a))(1/1) switched to FINISHED 
+10:12:23,813  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (4f00dfb3f29f6fcd56ad44d06ccb3e3e)
+10:12:23,813  INFO Task:873 - Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427) switched from RUNNING to FINISHED.
+10:12:23,813  INFO Task:744 - Freeing task resources for Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427).
+10:12:23,814  INFO ExecutionGraph:1025 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:194)) (1/1) (a05305624e1f3e1ca03141656ce31f4c) switched from RUNNING to FINISHED.
+10:12:23,814  INFO ExecutionGraph:1025 - FlatMap (FlatMap at createResult(VertexCentricIteration.java:198)) (1/1) (4f00dfb3f29f6fcd56ad44d06ccb3e3e) switched from RUNNING to FINISHED.
+10:12:23,814  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	FlatMap (FlatMap at createResult(VertexCentricIteration.java:194))(1/1) switched to FINISHED 
+10:12:23,815  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for SolutionSet Delta (1/1)
+10:12:23,815  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	FlatMap (FlatMap at createResult(VertexCentricIteration.java:198))(1/1) switched to FINISHED 
+10:12:23,815  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task SolutionSet Delta (204ad5bcc94a981575500aa157c4fd29)
+10:12:23,815  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for Join(Join at createResult(VertexCentricIteration.java:181)) (1/1)
+10:12:23,816  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task Join(Join at createResult(VertexCentricIteration.java:181)) (78b28000522afbc6156b35e314940427)
+10:12:23,817  INFO Task:873 - CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138) switched from RUNNING to FINISHED.
+10:12:23,817  INFO Task:744 - Freeing task resources for CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138).
+10:12:23,817  INFO ExecutionGraph:1025 - SolutionSet Delta (1/1) (204ad5bcc94a981575500aa157c4fd29) switched from RUNNING to FINISHED.
+10:12:23,817  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for CoGroup (Compute Function) (1/1)
+10:12:23,817  INFO ExecutionGraph:1025 - Join(Join at createResult(VertexCentricIteration.java:181)) (1/1) (78b28000522afbc6156b35e314940427) switched from RUNNING to FINISHED.
+10:12:23,818  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task CoGroup (Compute Function) (7fc770d91c20371cf8aa9bda4ffbd138)
+10:12:23,818  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	SolutionSet Delta(1/1) switched to FINISHED 
+10:12:23,818  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	Join(Join at createResult(VertexCentricIteration.java:181))(1/1) switched to FINISHED 
+10:12:23,818  INFO ExecutionGraph:1025 - CoGroup (Compute Function) (1/1) (7fc770d91c20371cf8aa9bda4ffbd138) switched from RUNNING to FINISHED.
+10:12:23,819  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	CoGroup (Compute Function)(1/1) switched to FINISHED 
+10:12:23,833  INFO Task:873 - IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b) switched from RUNNING to FINISHED.
+10:12:23,833  INFO ExecutionGraph:1025 - DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3) switched from CREATED to SCHEDULED.
+10:12:23,833  INFO Task:744 - Freeing task resources for IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b).
+10:12:23,834  INFO ExecutionGraph:1025 - DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3) switched from SCHEDULED to DEPLOYING.
+10:12:23,834  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8)(1/1) switched to SCHEDULED 
+10:12:23,834  INFO ExecutionGraph:354 - Deploying DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (attempt #0) to localhost
+10:12:23,834  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8)(1/1) switched to DEPLOYING 
+10:12:23,835  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1)
+10:12:23,835  INFO TaskManager:128 - Received task DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1)
+10:12:23,836  INFO Task:873 - DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3) switched from CREATED to DEPLOYING.
+10:12:23,836  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (698bbd1239a86e39350047c04ea0f16b)
+10:12:23,836  INFO FileSystem:110 - Created new CloseableRegistry org.apache.flink.core.fs.SafetyNetCloseableRegistry@41d1d825 for DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1)
+10:12:23,837  INFO Task:546 - Loading JAR files for task DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3) [DEPLOYING].
+10:12:23,837  INFO ExecutionGraph:1025 - IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a)) (1/1) (698bbd1239a86e39350047c04ea0f16b) switched from RUNNING to FINISHED.
+10:12:23,837  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	IterationHead(Vertex-centric iteration (example.VC.RandomWalkSimRankRedisBatch$SimRankVC@3d680b5a))(1/1) switched to FINISHED 
+10:12:23,838  INFO Task:575 - Registering task at network: DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3) [DEPLOYING].
+10:12:23,838  INFO Task:873 - DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3) switched from DEPLOYING to RUNNING.
+10:12:23,839  INFO ExecutionGraph:1025 - DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3) switched from DEPLOYING to RUNNING.
+10:12:23,839  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:23	DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8)(1/1) switched to RUNNING 
+10:12:24,593  INFO Task:873 - DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3) switched from RUNNING to FINISHED.
+10:12:24,593  INFO Task:744 - Freeing task resources for DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3).
+10:12:24,594  INFO FileSystem:121 - Ensuring all FileSystem streams are closed for DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1)
+10:12:24,594  INFO TaskManager:128 - Un-registering task and sending final execution state FINISHED to JobManager for task DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (e9f03fbf827b4661d6b7d47dff6875b3)
+10:12:24,595  INFO ExecutionGraph:1025 - DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8) (1/1) (e9f03fbf827b4661d6b7d47dff6875b3) switched from RUNNING to FINISHED.
+10:12:24,595  INFO JobSubmissionClientActor:265 - 01/11/2018 10:12:24	DataSink (TextOutputFormat (hdfs:/graph/output/RandomWalkSimRank_1515636739556) - UTF-8)(1/1) switched to FINISHED 
+10:12:24,596  INFO ExecutionGraph:965 - Job RandomWalkSimRank (955087a3985be319340f5ba87857b8dd) switched from state RUNNING to FINISHED.
+10:12:24,596  INFO JobSubmissionClientActor:275 - 01/11/2018 10:12:24	Job execution switched to status FINISHED.
+10:12:24,602  INFO JobSubmissionClientActor:322 - Terminate JobClientActor.
+10:12:24,602  INFO JobClient:304 - Job execution complete
+10:12:24,602  INFO JobSubmissionClientActor:302 - Disconnect from JobManager Actor[akka://flink/user/jobmanager_1#-1552720064].
+10:12:24,603  INFO FlinkMiniCluster:407 - Stopping FlinkMiniCluster.
+10:12:24,609  INFO TaskManager:128 - Stopping TaskManager akka://flink/user/taskmanager_1#126451542.
+10:12:24,610  INFO TaskManager:128 - Disassociating from JobManager
+10:12:24,611  INFO JobManager:128 - Stopping JobManager akka://flink/user/jobmanager_1.
+10:12:24,613  INFO BlobCache:227 - Shutting down BlobCache
+10:12:24,624  INFO BlobServer:341 - Stopped BLOB server at 0.0.0.0:62777
+10:12:24,624  INFO IOManager:110 - I/O manager removed spill file directory /var/folders/_k/h5pcklts6mz13vdz_kwnncpr0000gn/T/flink-io-a4002e11-2c30-4441-87fa-9836fa9bf488
+10:12:24,625  INFO NetworkEnvironment:298 - Shutting down the network environment and its components.
+10:12:24,640  INFO TaskManager:128 - Task manager akka://flink/user/taskmanager_1 is completely shut down.

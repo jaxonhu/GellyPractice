@@ -1,0 +1,203 @@
+package example.VC;
+
+import example.data.FindCliquesData;
+import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.api.java.DataSet;
+import org.apache.flink.api.java.ExecutionEnvironment;
+import org.apache.flink.api.java.tuple.Tuple2;
+import org.apache.flink.graph.Edge;
+import org.apache.flink.graph.Graph;
+import org.apache.flink.graph.GraphAlgorithm;
+import org.apache.flink.graph.Vertex;
+import org.apache.flink.graph.pregel.ComputeFunction;
+import org.apache.flink.graph.pregel.MessageIterator;
+import org.apache.flink.types.NullValue;
+
+import java.util.*;
+
+/**
+ * @Author: jaxon
+ * @Description:
+ * @Date: 2017/8/26
+ * @Time: 下午2:53
+ * @Project: GellyPractice
+ */
+public class FindClique<K,EV>  implements GraphAlgorithm<K,ArrayList<List<K>>,EV,DataSet<Vertex<K,ArrayList<List<K>>>>> {
+
+    private final static int maxIterations = 10;
+
+    @Override
+    public DataSet<Vertex<K, ArrayList<List<K>>>> run(Graph<K, ArrayList<List<K>>, EV> input) throws Exception {
+
+       Graph<K,ArrayList<List<K>>,EV> initialGraph = input.mapVertices(new VertexInitializer<K>());
+
+        DataSet<Vertex<K,ArrayList<List<K>>>> vertices = input.runVertexCentricIteration(new CliquesFindComputionFunction<K, EV>(),null,maxIterations).getVertices();
+
+//        DataSet<ResClique<K>>  res =  vertices.map(new MapFunction<Vertex<K,List<List<K>>>, ResClique<K>>() {
+//            @Override
+//            public ResClique<K> map(Vertex<K, List<List<K>>> v) throws Exception {
+//
+//                return new ResClique<>(v.getId(),v.getValue());
+//            }
+//        }).groupBy("cliques").reduce(new ReduceFunction<ResClique<K>>() {
+//            @Override
+//            public ResClique<K> reduce(ResClique<K> t1, ResClique<K> t2) throws Exception {
+//
+//                if(t1.cliques.get(0).size() > t2.cliques.get(0).size())
+//                    return t1;
+//                return null;
+//            }
+//        }).distinct("cliques");
+
+
+        return vertices;
+    }
+
+    public  final class VertexInitializer<K>implements MapFunction<Vertex<K,ArrayList<List<K>>>,ArrayList<List<K>>> {
+
+
+        @Override
+        public ArrayList<List<K>> map(Vertex<K, ArrayList<List<K>>> vertex) throws Exception {
+
+            K vid = vertex.getId();
+
+            ArrayList<List<K>> list = new ArrayList<>();
+
+            ArrayList<K> sublist = new ArrayList<>();
+
+            sublist.add(vid);
+            list.add(sublist);
+
+            System.out.println("hah");
+
+
+            return list;
+        }
+    }
+
+
+    public final class CliquesFindComputionFunction<K,EV> extends ComputeFunction<K,ArrayList<List<K>>,EV,ArrayList<List<K>>>{
+
+
+
+
+        public CliquesFindComputionFunction() {
+
+        }
+
+        @Override
+        public void compute(Vertex<K, ArrayList<List<K>>> vertex, MessageIterator<ArrayList<List<K>>> inMessages) throws Exception {
+
+//            if(getSuperstepNumber() == 1){
+//                K vid = vertex.getId();
+//
+//                List<K> list = new ArrayList<>();
+//                list.add(vid);
+//                List<List<K>> message = new ArrayList<>();
+//                message.add(list);
+//                sendMessageToAllNeighbors(message);
+//            }else{
+//                Set<List> container = new HashSet<>();
+//                Set<List> result = new HashSet<>();
+//                List<K> neighbors = new ArrayList<>();
+//                Tuple2<K,List<List<K>>>  oldValue = vertex.getValue();
+//
+//
+//                Iterable<Edge<K,EV>> edges = getEdges();
+//                Iterator<Edge<K,EV>> eiter = edges.iterator();
+//                Iterator<List> iter = container.iterator();
+//
+//                for(;eiter.hasNext();){
+//                    Edge e = eiter.next();
+//                    neighbors.add((K)e.f0);
+//                }
+//
+//                for(;inMessages.hasNext();){
+//
+//                    List<List<K>> l = inMessages.next();
+//
+//                    Iterator<List<K>> iter2 = l.iterator();
+//                    for(;iter2.hasNext();){
+//                        List<K> subl = iter2.next();
+//                        container.add(subl);
+//                    }
+//                }
+//
+//
+//
+//                Iterator<List> setIter = container.iterator();
+//
+//                for(;setIter.hasNext();){
+//                    List<K> list = setIter.next();
+//
+//                   if(neighbors.containsAll(list)){
+//                        List<K> newlist = new ArrayList<>(list);
+//                        newlist.add(vertex.getId());
+//                        result.add(newlist);
+//                   }
+//
+//                }
+//
+//                Iterator<List> resultIter = result.iterator();
+//                int maxSize = 0;
+//                for(;resultIter.hasNext();){
+//                    List<K> l = resultIter.next();
+//                    int s = l.size();
+//                    if(s > maxSize) maxSize = s;
+//                }
+//                resultIter = result.iterator();
+//                for(;resultIter.hasNext();){
+//                    List<K> l = resultIter.next();
+//                    if(l.size() < maxSize) result.remove(l);
+//                }
+//
+//                List<List<K>> nextMessages = new ArrayList<>();
+//                for(Iterator<List> i = result.iterator();i.hasNext();){
+//                        List<K> l = i.next();
+//                        nextMessages.add(l);
+//                }
+//
+//                // the result is equal to previous step, so don't need to send duplicated messages.
+//                if(oldValue.equals(nextMessages)){
+//                    return;
+//                }
+//
+//                for(int j = 0; j < neighbors.size(); j ++){
+//                    sendMessageTo(neighbors.get(j),nextMessages);
+//                }
+//            }
+//
+        }
+    }
+
+
+//    public static class ResClique<K>{
+//
+//        public ResClique() {
+//        }
+//
+//        public ResClique(K v, List<List<K>> c) {
+//            vertexId = v;
+//            cliques = c;
+//        }
+//
+//        public K vertexId;
+//
+//        public List<List<K>> cliques;
+//
+//
+//    }
+
+    public static void main(String[] args) throws Exception{
+        ExecutionEnvironment env = ExecutionEnvironment.createLocalEnvironment();
+
+        //env.getConfig().enableForceKryo();
+        Graph<Long,ArrayList<List<Long>>,NullValue> input = Graph.fromDataSet(FindCliquesData.getDefaultVerticsSet(env),FindCliquesData.getDefaultEdgeDataSet(env),env)
+                .getUndirected();
+
+        DataSet<Vertex<Long,ArrayList<List<Long>>>> res = new FindClique<Long,NullValue>().run(input);
+
+        res.print();
+    }
+
+}

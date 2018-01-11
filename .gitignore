@@ -1,0 +1,4 @@
+*.jar
+resources
+logs
+target
